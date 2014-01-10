@@ -8,7 +8,7 @@ angular.module("nsnChartBar", [])
                 alignment: '@',
                 idchart: '@'
             },
-            templateUrl: 'templates/barChart.html',
+            templateUrl: '../bower_components/nsnBarChart/templates/barChart.html',
 //            require: '^nsnTable',
             controller: ['$scope', function ($scope) {
 
@@ -34,7 +34,7 @@ angular.module("nsnChartBar", [])
                         plotBorderWidth: null,
                         plotShadow: false,
                         borderWidth: 0,
-                        plotBackgroundImage: 'images/plot-background.png'
+                        plotBackgroundImage: '../bower_components/nsnBarChart/images/plot-background.png'
                     },
                     credits: {
                         enabled: false
@@ -213,8 +213,6 @@ angular.module("nsnChartBar", [])
             link: function linkFn($scope,  element, attrs) {
 
                 $scope.handleInputInfo = function() {
-
-
 
                 }
 
